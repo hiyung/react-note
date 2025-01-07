@@ -4,7 +4,7 @@
 
 ## ✅Props 사용법
 ### 구조 분해 할당
-```
+```javascript
 function Avatar({ name, imageId }) {
   return (
     <img
@@ -15,7 +15,7 @@ function Avatar({ name, imageId }) {
 }
 ```
 ### props 객체
-```
+```javascript
 function Avatar({props}) {
   return (
     <img
@@ -31,7 +31,7 @@ function Avatar({props}) {
 ---
 ## ✅Props 확장
 ### ...rest
-```
+```javascript
 function Card({ title, desc, ...rest }) {
   const { isBg } = rest;
   const cardStyle = isBg ? { backgroundColor: 'lightblue' } : {};
@@ -44,7 +44,7 @@ function Card({ title, desc, ...rest }) {
 }
 ```
 ### PropType
-```
+```javascript
 import PropTypes from 'prop-types';
 
 function Card({ title, desc, isBorder = false }) {
@@ -62,7 +62,7 @@ Card.propTypes = {
   isBorder: PropTypes.boolean,
 };
 
-예시)
+//예시
 <Card title="Hello" desc="This is description" isBorder={true} />
 <Card title="No Border" desc="This is description" />
 ```
