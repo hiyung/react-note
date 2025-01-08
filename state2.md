@@ -2,7 +2,7 @@
 
 > useState 제대로 활용하기...
 
-## setState 의 콜백
+## ✅setState 의 콜백
 ```javascript
 setState((preState) => {
   return newState
@@ -35,7 +35,7 @@ function App() {
 }
 ```
 
-## useState 의 콜백
+## ✅useState 의 콜백
 ```javascript
 useState(() => {
   return heavyWorks(); //heavyWorks는 컴포넌트 밖에서 정의
